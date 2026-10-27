@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pboelpaes2-promptrisk"
+version = "0.1.0"
+description = "检测歧义指令、隐含假设与可能导致越界的表述"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "pboelpaes2" }]
+keywords = ["cli", "analysis", "observability", "evaluation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://pboelpaes2.github.io"
+Repository = "https://github.com/pboelpaes2/promptrisk"
+Issues = "https://github.com/pboelpaes2/promptrisk/issues"
+
+[project.scripts]
+promptrisk = "promptrisk:main"
+
+[tool.setuptools]
+py-modules = ["promptrisk"]
